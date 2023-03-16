@@ -195,7 +195,7 @@ function generateRawType(ast: AST, options: Options): string {
     case 'STRING':
       switch (ast.format) {
         case 'binary':
-          return `import('fs').ReadStream | Buffer | File`
+          return `import('fs').ReadStream | File`
       }
       return 'string'
     case 'TUPLE':
